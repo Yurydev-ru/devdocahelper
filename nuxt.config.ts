@@ -2,18 +2,21 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-06-05',
   devtools: { enabled: true },
-css: ['@/assets/css/tailwind.css'],
+css: [
+  '~/assets/css/main.scss',
+  '~/assets/css/tailwind.css'
+],
 modules: [
-  '@nuxtjs/tailwindcss',
+  '@nuxtjs/mdc',
   '@unocss/nuxt',
   '@nuxt/content',
-  '@nuxtjs/mdc',
+  '@nuxtjs/tailwindcss',
 ],
 vite: {
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "@/assets/css/tailwind.css" as *;`
+        additionalData: `@use "~/assets/css/utils" as *;`
     },
   },
 },

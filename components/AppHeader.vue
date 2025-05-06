@@ -3,13 +3,11 @@
 </script>
 
 <template>
-    <header class='header bg-teal-400'>
-        <h2>Header</h2>
+    <header class='app-header'>
+        <div class="center-content">
+            <h2>Header</h2>
+        </div>
     </header>
 </template>
 
-<style scoped lang='scss'>
-.header {
-    @apply w-full max-w-screen-lg m-auto
-}
-</style>
+<style scoped lang='scss'></style>

@@ -5,7 +5,7 @@
 <template>
     <div class='app-wrapper'>
         <AppHeader />
-        <main class='main'>
+        <main class='app-main'>
             <slot />
         </main>
         <AppFooter />
@@ -14,12 +14,10 @@
 
 <style scoped lang='scss'>
 .app-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    @apply flex flex-col min-h-screen bg-gray-950 text-white
 }
 
-.main {
+.app-main {
     flex: 1 1 0;
 }
 </style>

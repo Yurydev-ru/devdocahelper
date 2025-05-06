@@ -130,7 +130,5 @@ md-shortcut.toggleTitleH4	Toggle #### H4 title
 md-shortcut.toggleTitleH5	Toggle ##### H5 title
 md-shortcut.toggleTitleH6	Toggle ###### H6 title
 md-shortcut.addTable	Add Tabular values
-md-shortcut.addTableWithHeader	Add Tabular values with header
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-
+    md-shortcut.addTableWithHeader	Add Tabular values with header
+- [Marmeaid](#marmeaid)

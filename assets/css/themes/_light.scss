@@ -1,0 +1,20 @@
+// [data-theme="light"] {
+//   --bg: #fff;
+//   --text: #000;
+// }
+
+:root {
+  //light-theme
+  --bg-primary: rgb(165, 165, 165);
+  --bg-secondary: rgba(165, 165, 165, 0.696);
+  --bg-ui: rgb(8, 9, 20);
+  --border-ui: rgb(2, 47, 68);
+
+  //hover
+  --border-ui-hov: rgb(167, 219, 9);
+  --text-ui-hov: #E4026F;
+  --bg-ui-hov: rgb(8, 9, 20, 70%);
+
+  --text-col-primary: rgb(0, 185, 77, 100%);
+  --text-col-secondary: rgb(0, 185, 77, 60%);
+}

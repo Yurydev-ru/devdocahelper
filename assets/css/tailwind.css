@@ -1,5 +1,1 @@
-body {
-    margin: 0;
-    background-color: #212121;
-    color: aliceblue;
-}
+@import "./main.scss";

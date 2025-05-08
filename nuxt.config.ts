@@ -1,5 +1,11 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
   compatibilityDate: '2025-06-05',
   builder: 'vite',
   modules: ['@nuxtjs/tailwindcss'],

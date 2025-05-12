@@ -1,14 +1,14 @@
-
-body {
-    margin: 0;
-    background-color: #212121;
-    color: aliceblue;
-}
-
 .app-header,
 .app-footer {
     width: 100%;
     min-height: 2rem;
+}
+
+.app-header,
+.app-footer,
+.dark {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
 }
 
 .app-wrapper {
@@ -28,4 +28,10 @@ body {
 
 .section{
     padding: 40px 0;
+}
+
+html,
+.dark {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
 }

@@ -8,11 +8,15 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-05-10',
   builder: 'vite',
-  modules: ['@nuxtjs/tailwindcss'],
   css: [
     '~/assets/css/tailwind.css',
-    '~/assets/css/main.scss'
+    '~/assets/scss/main.scss'
   ],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+  colorMode: {
+    preference: 'system',
+    classSuffix: '',
+  },
   components: [
     {
       path: '~/components',
@@ -23,7 +27,8 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `@use "~/assets/css/utils" as *;`
+          additionalData: `@use "~/assets/scss/themes/light" as *;
+          @use "~/assets/scss/themes/dark" as *;`
         },
       },
     },

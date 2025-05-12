@@ -1,0 +1,26 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// @mixin glass-effect {
+//   background: var(--glass-bg);
+//   border: 1px solid var(--glass-border);
+//   backdrop-filter: blur(10px);
+//   border-radius: 12px;
+// }
+
+// @mixin define-colors {
+//   @each $name, $color in $colors {
+//     --color-#{$name}:#{$color};
+//   }
+// }

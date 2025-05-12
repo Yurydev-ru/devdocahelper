@@ -6,6 +6,7 @@
     <header class='app-header'>
         <div class="center-content">
             <h2>Header</h2>
+            <ToggleTheme/>
         </div>
     </header>
 </template>

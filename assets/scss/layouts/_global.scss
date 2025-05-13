@@ -1,13 +1,15 @@
+@forward '../utils/worker';
+
+
 .app-header,
 .app-footer {
     width: 100%;
-    min-height: 2rem;
 }
 
 .app-header,
 .app-footer,
 .dark {
-    background-color: var(--bg-color);
+    background: var(--bg-ui);
     color: var(--text-primary);
 }
 

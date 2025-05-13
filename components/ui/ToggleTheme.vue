@@ -8,11 +8,20 @@
 </script>
 
 <template>
-  <button @click="toggleTheme" class="btn btn-primary">
+  <button @click="toggleTheme" class="btn-toggle" aria-label="Toggle theme">
     {{ colorMode.value === 'light' ? 'Dark' : 'Light' }}
   </button>
 </template>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
+  .btn-toggle {
+    border: none;
+    background-color: transparent;
+    padding: 0 5px;
+    cursor: pointer;
 
+    :hover {
+      outline: 1px solid black;
+    }
+  }
 </style>

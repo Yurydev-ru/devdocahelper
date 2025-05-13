@@ -5,14 +5,21 @@
 <template>
     <header class='app-header'>
         <div class="center-content">
-            <h2>Header</h2>
+            <AppLogo/>
+            <nuxt-icon name="nodejs"/>
             <ToggleTheme/>
         </div>
     </header>
 </template>
 
 <style scoped lang='scss'>
-    .app-header {
-        background: grey;
+    .center-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nuxt-icon svg {
+        font-size: 20px;
     }
 </style>

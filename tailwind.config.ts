@@ -7,9 +7,12 @@ export default <Config> {
     extend: {}
   },
   content: [
-    './components/**/*.{vue,js}',
-    './layouts/**/*.vue',
     './pages/**/*.vue',
+    './layouts/**/*.vue',
+    './components/**/*.vue',
+    './composables/**/*.{js,ts}',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}'
   ],
   plugins: [],
 }

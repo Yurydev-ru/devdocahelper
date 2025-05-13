@@ -1,12 +1,5 @@
 export default defineNuxtConfig({
-  devtools: {
-    enabled: true,
-
-    timeline: {
-      enabled: true,
-    },
-  },
-  compatibilityDate: '2025-05-10',
+  
   builder: 'vite',
   css: [
     '~/assets/css/tailwind.css',
@@ -34,4 +27,8 @@ export default defineNuxtConfig({
     },
 
   },
+  devtools: { 
+    enabled: true,
+  },
+  compatibilityDate: '2025-05-10',
 })

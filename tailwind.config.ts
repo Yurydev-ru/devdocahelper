@@ -1,18 +1,29 @@
 import type { Config } from 'tailwindcss'
 
 
-export default <Config> {
+const config: Config = {
+  content: [
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue'
+  ],
   theme: {
     darkMode: false,
-    extend: {}
+    extend: {
+      // colors: {
+      //   bg: 'var(--bg-color)',
+      //   ui: 'var(--bg-ui)',
+      //   'ui-hover': 'var(--bg-ui-hov)',
+      //   border: 'var(--border-ui)',
+      //   text: 'var(--text-primary)',
+      //   'text-ui': 'var(--text-ui)',        
+      // },
+      // spacing: {
+      //   'layout': 'var(--layout-padding, 1rem)',
+      // },
+    },
   },
-  content: [
-    './pages/**/*.vue',
-    './layouts/**/*.vue',
-    './components/**/*.vue',
-    './composables/**/*.{js,ts}',
-    './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}'
-  ],
   plugins: [],
 }
+
+export default config

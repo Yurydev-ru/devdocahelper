@@ -1,9 +1,12 @@
+import { defineNuxtConfig } from 'nuxt/config';
+import { extendViteConfig } from 'nuxt/kit';
+
 export default defineNuxtConfig({
-  
-  builder: 'vite',
+  ssr: true,
+  vite: './vite.config',
   css: [
-    '~/assets/css/tailwind.css',
-    '~/assets/scss/main.scss'
+    '/assets/styles/tailwind.css',
+    './assets/styles/main.scss'
   ],
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', 'nuxt-icons'],
   colorMode: {
@@ -11,23 +14,13 @@ export default defineNuxtConfig({
   },
   components: [
     {
-      path: '~/components',
+      path: './components',
       pathPrefix: false,
     }
   ],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@use "~/assets/scss/themes/light" as *;
-          @use "~/assets/scss/themes/dark" as *;`
-        },
-      },
-    },
-
-  },
+  
   devtools: { 
     enabled: true,
   },
   compatibilityDate: '2025-05-10',
-})
+});

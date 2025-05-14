@@ -21,5 +21,5 @@
 
     .nuxt-icon svg {
         font-size: 20px;
-    }
+     }
 </style>

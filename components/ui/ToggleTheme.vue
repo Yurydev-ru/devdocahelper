@@ -9,7 +9,7 @@
 
 <template>
   <button @click="toggleTheme" class="btn-toggle" aria-label="Toggle theme">
-    {{ colorMode.value === 'light' ? 'Dark' : 'Light' }}
+    {{ colorMode.value === 'light' ? 'dark' : 'light' }}
   </button>
 </template>
 

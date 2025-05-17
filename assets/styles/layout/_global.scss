@@ -1,16 +1,10 @@
 @forward '../utils/worker';
+@forward '../themes/_dark';
 
 
 .app-header,
 .app-footer {
     width: 100%;
-}
-
-.app-header,
-.app-footer,
-.dark {
-    background: var(--bg-ui);
-    color: var(--text-primary);
 }
 
 .app-wrapper {
@@ -32,8 +26,7 @@
     padding: 40px 0;
 }
 
-html,
-.dark {
-    background-color: var(--bg-color);
+html.dark {
+    background: var(--bg-color);
     color: var(--text-primary);
 }

@@ -1,15 +1,15 @@
 <script lang="ts" setup>
   const colorMode = useColorMode();
   const toggleTheme = () => {
-    colorMode.value = colorMode.value === 'light' ? 'dark' : 'light';
-  }
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
+  };
 
 
 </script>
 
 <template>
   <button @click="toggleTheme" class="btn-toggle" aria-label="Toggle theme">
-    {{ colorMode.value === 'light' ? 'dark' : 'light' }}
+    {{ colorMode.value === 'dark' ? 'light' : 'dark' }}
   </button>
 </template>
 

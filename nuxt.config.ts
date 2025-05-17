@@ -1,16 +1,28 @@
+import { defineConfig } from 'vite';
+import path from 'path';
 import { defineNuxtConfig } from 'nuxt/config';
-import { extendViteConfig } from 'nuxt/kit';
 
 export default defineNuxtConfig({
-  ssr: true,
-  vite: './vite.config',
+  // ssr: true,
+  vite: {
+    server: {
+      proxy: {
+        '/api': {
+          target: 'http://localhost:3000',
+          changeOrigin: true
+      },
+    },
+    },
+  },
   css: [
-    '/assets/styles/tailwind.css',
+    './assets/styles/tailwind.css',
     './assets/styles/main.scss'
   ],
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', 'nuxt-icons'],
+  modules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', 'nuxt-icons'],
   colorMode: {
     classSuffix: '',
+    fallback: 'dark',
+    preference: 'system',
   },
   components: [
     {

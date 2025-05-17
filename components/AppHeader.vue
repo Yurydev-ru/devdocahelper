@@ -13,6 +13,15 @@
 </template>
 
 <style scoped lang='scss'>
+
+.app-header {
+    background: #000000;
+}
+
+.app-header.dark {
+    background: #ffffff;
+
+}
     .center-content {
         display: flex;
         justify-content: space-between;

@@ -1,11 +1,11 @@
-@forward 'base/reset';
-@forward 'base/_typography';
-@forward 'layout/_container';
-@forward 'layout/_global';
-@forward 'themes/dark';
-@forward 'themes/light';
-@forward 'utils/_breakpoints';
-@forward 'utils/_mixins';
-@forward 'utils/_worker';
+@use 'themes/light';
+@use 'themes/dark';
+@use 'utils/variables';
+@use 'utils/mixins';
+@use 'base/reset';
+@use 'base/typography';
+@use 'layout/global';
+@use 'utils/breakpoints';
+@use 'utils/worker';
 
-@forward 'tailwind.css';
+@use './tailwind.css';

@@ -6,11 +6,11 @@
   <ClientOnly>
     <div class="logo_wrapper">
       <NuxtLink to="/" class="logo">
-      <img class="logo_image" src="/public/logo-mob.png"  alt="logo"/>
-          <div class="logo_text el-visible">
+      <img class="logo_image" src="/assets/icons/logo-dark.svg"  alt="logo"/>
+          <!-- <div class="logo_text el-visible">
               <p>developers</p>
               <p>learn</p>
-          </div>
+          </div> -->
     </NuxtLink>
     </div>
   </ClientOnly>
@@ -32,7 +32,9 @@
   .logo {
         display: flex;
         justify-content: center;
-
+        width: 65px;;
+        height: 45px;
+        cursor: pointer;
         @media (min-width: 768px) {
             align-items: center;
             height: 75px;

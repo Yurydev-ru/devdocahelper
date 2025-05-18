@@ -1,12 +1,10 @@
 <script lang="ts" setup>
   const colorMode = useColorMode();
   
-  const setTheme = (theme: string) => {
-    colorMode.value = theme === 'light' ? 'light' : 'dark';
-    document.documentElement.style.setProperty('--color-scheme', theme === 'light' ? 'light' : 'dark');
-  }
-
-
+ const setTheme = (theme: 'light' | 'dark') => {
+  colorMode.value = theme;
+  document.documentElement.setAttribute('data-theme', theme);
+};
 </script>
 
 <template>
@@ -19,13 +17,14 @@
 </template>
 
 <style lang="scss" scoped>
-[data-theme="light'"] .light-btn {
-  display: block;
-}
-
-[data-theme="dark'"] .dark-btn {
+[data-theme="light"] .light-btn {
   display: none;
 }
+
+[data-theme="dark"] .dark-btn {
+  display: none;
+}
+
 
 .icon {
   color: yellow;

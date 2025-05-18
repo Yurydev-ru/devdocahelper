@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 15px 30px;
+    max-width: 1240px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 20px 40px;
+    max-width: 1440px;
+  }
+}

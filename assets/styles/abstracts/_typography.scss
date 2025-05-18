@@ -1,5 +1,13 @@
-// body {
-//   font-family: $font-base;
-//   font-size: $font-size-base;
-//   line-height: $line-height-base;
-// }
+$font-s: (
+  xs: 0.75rem,
+  sm: 0.875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem,
+);
+
+:root {
+  @each $name, $value in $font-s {
+    --font-size-#{$name}: #{$value};
+  }
+}

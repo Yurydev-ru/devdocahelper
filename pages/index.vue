@@ -6,7 +6,7 @@ definePageMeta({
 
 <template>
     <section class='section'>
-        <div class="center-content">
+        <div class="container">
             <h2 class="title-sections">Hero</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, perferendis doloremque! Perspiciatis et
                 quos

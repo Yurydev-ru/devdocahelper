@@ -9,3 +9,11 @@
         </div>
     </footer>
 </template>
+
+<style scoped lang='scss'>
+.app-footer {
+    background-color: var(--surface);
+    border-top: 0.5px solid var(--border);
+    box-shadow: var(--shadow-base);
+}
+</style>

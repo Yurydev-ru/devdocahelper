@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import MobMenu from '~/components/nav/MobMenu.vue';
+
 definePageMeta({
     layout: 'default',
 })
@@ -6,6 +8,7 @@ definePageMeta({
 
 <template>
     <section class='section'>
+        <MobMenu/>
         <div class="container">
             <h2 class="title-sections">Hero</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, perferendis doloremque! Perspiciatis et

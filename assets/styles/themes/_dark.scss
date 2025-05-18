@@ -1,8 +1,10 @@
 [data-theme='dark'] {
-    --bkg: #131200;
-    --surface: srgb-linear (0.02 0.02 0.02);
-    --text-primary: hsl(56, 71%, 91%);
+    --bkg: #0f0f0f;
+    --surface: #1c1c1c;
+    --text-primary: #f0f0f0;
     --title-col: oklab(0.83 -0.4 0.12 / 1);
-    --text-secondary: #52d1dc;
-    --border: hsl(144, 86%, 49%);
+    --text-secondary: #a5a5a5;
+    --border: #36363671;
+    --color-accent: #818cf8;
+     --shadow-base: 0 4px 12px rgba(0, 0, 0, 0.767);
 }

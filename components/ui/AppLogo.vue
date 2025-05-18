@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+  const colorMode = useColorMode();
 
 </script>
 
@@ -6,11 +7,8 @@
   <ClientOnly>
     <div class="logo_wrapper">
       <NuxtLink to="/" class="logo">
-      <img class="logo_image" src="/assets/icons/logo-dark.svg"  alt="logo"/>
-          <!-- <div class="logo_text el-visible">
-              <p>developers</p>
-              <p>learn</p>
-          </div> -->
+        <Icon name="icons:logo-light"/>
+        <Icon name="icons:logo-dark"/>
     </NuxtLink>
     </div>
   </ClientOnly>
@@ -23,11 +21,15 @@
     @media (min-width: 768px) {
       padding: 10px 0;
     }
-
-    @media (min-width: 1024px) {
-      padding: 15px 0;
-    }
   }
+
+  [data-theme="light"] .logo-light {
+  display: none;
+}
+
+[data-theme="dark"] .logo-dark {
+  display: block;
+}
 
   .logo {
         display: flex;
@@ -37,7 +39,14 @@
         cursor: pointer;
         @media (min-width: 768px) {
             align-items: center;
-            height: 75px;
+            height: 55px;
+            width: 80px;
+        }
+        @media (min-width: 1024px) {
+            align-items: center;
+            height: 60px;
+            width: 110px;
+            padding: 5px 0;
         }
     }
 

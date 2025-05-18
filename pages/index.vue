@@ -6,14 +6,12 @@ definePageMeta({
 
 <template>
     <section class='section'>
-        <div class="container">
-            <div class="overlay-glass">
-                <h2 class="title-sections">Hero</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, perferendis doloremque! Perspiciatis et
-                    quos
-                    eaque neque hic atque tempore magnam?</p>
-                    <AppCategories/>
-            </div>
+        <div class="center-content">
+            <h2 class="title-sections">Hero</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, perferendis doloremque! Perspiciatis et
+                quos
+                eaque neque hic atque tempore magnam?</p>
+                <AppCategories/>
         </div>
     </section>
 </template>

@@ -4,7 +4,7 @@
 
 <template>
     <header class='app-header'>
-        <div class="center-content">
+        <div class="container">
             <AppLogo/>
             <nuxt-icon name="nodejs"/>
             <ToggleTheme/>

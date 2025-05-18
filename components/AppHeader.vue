@@ -4,7 +4,7 @@
 
 <template>
     <header class='app-header'>
-        <div class="container">
+        <div class="container between">
             <AppLogo/>
             <nuxt-icon name="nodejs"/>
             <ToggleTheme/>
@@ -13,14 +13,6 @@
 </template>
 
 <style scoped lang='scss'>
-
-
-    .center-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .nuxt-icon svg {
         font-size: 20px;
      }

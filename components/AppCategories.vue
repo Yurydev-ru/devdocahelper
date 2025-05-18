@@ -3,7 +3,7 @@
 
 <template>
   <section class="section">
-    <div class="center-container">
+    <div class="container">
       <h2 class="title-section">Категории</h2>
         <ul>
           <li>

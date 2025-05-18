@@ -20,7 +20,7 @@
 
 <style lang="scss" scoped>
 [data-theme="light'"] .light-btn {
-  display: none;
+  display: block;
 }
 
 [data-theme="dark'"] .dark-btn {

@@ -1,7 +1,8 @@
 [data-theme='dark'] {
-    --bkg: #1a1b1e;
-    --surface: #2a2a2c;
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --border: #334155;
+    --bkg: #131200;
+    --surface: srgb-linear (0.02 0.02 0.02);
+    --text-primary: hsl(56, 71%, 91%);
+    --title-col: oklab(0.83 -0.4 0.12 / 1);
+    --text-secondary: #52d1dc;
+    --border: hsl(144, 86%, 49%);
 }

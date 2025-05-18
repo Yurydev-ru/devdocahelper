@@ -5,9 +5,14 @@ body {
 
 }
 
+.title-section {
+    color: var(--title-col);
+}
+
 .app-header,
 .app-footer {
     max-width: 100%;
+    background-color: hsl(169deg 8% 11.87%);
 }
 
 .app-wrapper {

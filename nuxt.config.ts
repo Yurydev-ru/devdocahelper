@@ -4,25 +4,16 @@ import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
   // ssr: true,
-  vite: {
-    server: {
-      proxy: {
-        '/api': {
-          target: 'http://localhost:3000',
-          changeOrigin: true
-      },
-    },
-    },
-  },
+  
   css: [
-    './assets/styles/tailwind.css',
-    './assets/styles/main.scss'
+    '@/assets/styles/main.scss'
   ],
-  modules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', 'nuxt-icons'],
+  modules: ['@nuxtjs/color-mode', 'nuxt-icons'],
   colorMode: {
     classSuffix: '',
-    fallback: 'dark',
+    fallback: 'light',
     preference: 'system',
+    storageKey: 'color-mode',
   },
   components: [
     {
@@ -30,6 +21,16 @@ export default defineNuxtConfig({
       pathPrefix: false,
     }
   ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@use "@/assets/styles/themes/light" as *;
+        @use "@/assets/styles/themes/dark" as *;`
+        },
+      },
+    },
+  },
   
   devtools: { 
     enabled: true,

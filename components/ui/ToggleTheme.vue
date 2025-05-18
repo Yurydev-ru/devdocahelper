@@ -1,15 +1,15 @@
 <script lang="ts" setup>
   const colorMode = useColorMode();
-  const toggleTheme = () => {
-    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
-  };
+  // const toggleTheme = () => {
+  //   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
+  // };
 
 
 </script>
 
 <template>
-  <button @click="toggleTheme" class="btn-toggle" aria-label="Toggle theme">
-    {{ colorMode.value === 'dark' ? 'light' : 'dark' }}
+  <button @click="colorMode.preference = colorMode.preference === 'light' ? 'dark' : 'light'" class="btn-toggle" aria-label="Toggle theme">
+    Сменить тему ({{ colorMode.preference }})
   </button>
 </template>
 

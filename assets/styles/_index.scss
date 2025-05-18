@@ -1,15 +1,9 @@
-@use 'themes/light';
-@use 'themes/dark';
-@use 'utils/variables';
-@use 'utils/mixins';
-@use 'base/reset';
-@use 'base/typography';
-@use 'layout/global';
-@use 'utils/breakpoints';
-@use 'utils/worker';
+@forward 'themes/light';
+@forward 'themes/dark';
+
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--bkg-primary);
+  color: var(--color-primary);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
 }

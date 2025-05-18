@@ -1,19 +1,21 @@
-import { defineConfig } from 'vite';
-import path from 'path';
 import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
-  // ssr: true,
-  
   css: [
     '@/assets/styles/main.scss'
   ],
-  modules: ['@nuxtjs/color-mode', 'nuxt-icons'],
+  modules: ['@nuxtjs/color-mode', '@nuxt/icon'],
   colorMode: {
-    classSuffix: '',
-    fallback: 'light',
     preference: 'system',
-    storageKey: 'color-mode',
+    fallback: 'light',
+    storageKey: 'nuxt-theme',
+    classSuffix: '',
+    dataValue: 'theme',
+  
+  },
+  icon: {
+    size: '1.5em',
+    class: 'icon',
   },
   components: [
     {

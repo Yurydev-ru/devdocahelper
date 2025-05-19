@@ -15,6 +15,13 @@ export default defineNuxtConfig({
   icon: {
     size: '1.5em',
     class: 'icon',
+    customCollections: [
+      {
+        prefix: 'icons',
+        dir: './assets/icons',
+        normalizeIconName: false
+      }
+    ],
   },
   components: [
     {

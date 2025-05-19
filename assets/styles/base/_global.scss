@@ -12,7 +12,7 @@ body {
 .app-header,
 .app-footer {
     max-width: 100%;
-    background-color: hsl(169deg 8% 11.87%);
+    box-shadow: var(--shadow-base);
 }
 
 .app-wrapper {

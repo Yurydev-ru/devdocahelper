@@ -14,7 +14,7 @@
 .app-footer {
     border-top: 0.5px solid var(--border);
     box-shadow: var(--shadow-base);
-    background-color: hsl(0deg 2.31% 14.66% / 8%);
+    background-color: rgba(38, 37, 37, 0.08);
     backdrop-filter: blur(10px);
 }
 

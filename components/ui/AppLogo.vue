@@ -7,58 +7,34 @@
   <ClientOnly>
     <div class="logo_wrapper">
       <NuxtLink to="/" class="logo">
-        <Icon name="icons:logo-light"/>
-        <Icon name="icons:logo-dark"/>
+        <Icon v-if="colorMode.value === 'light'" name="icons:logo-light" mode="css" class="logo-light"/>
+        <Icon v-else name="icons:logo-dark" mode="css" class="logo-dark"/>
     </NuxtLink>
     </div>
   </ClientOnly>
 </template>
 
 <style scoped lang="scss">
-  .logo_wrapper {
-    padding: 5px 0;
+[data-theme="dark"] .logo-dark,
+[data-theme="light"] .logo-light {
+    display: block;
+    width: 1.8em;
+    height: 1.8em;
 
-    @media (min-width: 768px) {
-      padding: 10px 0;
+    @media screen and (min-width: 768px) {
+        width: 2.5em;
+        height: 2em;
     }
-  }
 
-  [data-theme="light"] .logo-light {
-  display: none;
+    @media screen and (min-width: 1024px) {
+        width: 3em;
+        height: 1.8em;
+    }
 }
 
-[data-theme="dark"] .logo-dark {
-  display: block;
+.logo {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
-
-  .logo {
-        display: flex;
-        justify-content: center;
-        width: 65px;;
-        height: 45px;
-        cursor: pointer;
-        @media (min-width: 768px) {
-            align-items: center;
-            height: 55px;
-            width: 80px;
-        }
-        @media (min-width: 1024px) {
-            align-items: center;
-            height: 60px;
-            width: 110px;
-            padding: 5px 0;
-        }
-    }
-
-    .logo_text {
-        justify-content: center;
-        align-items: center;
-        
-        
-        @media (max-width: 768px) {    
-            flex-direction: row;
-            font-size: 10px;
-            font-weight: 300;
-        } 
-    }
 </style>

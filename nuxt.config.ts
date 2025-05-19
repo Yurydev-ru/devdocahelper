@@ -19,6 +19,7 @@ export default defineNuxtConfig({
       {
         prefix: 'icons',
         dir: './assets/icons',
+        normalizeIconName: false
       }
     ],
   },

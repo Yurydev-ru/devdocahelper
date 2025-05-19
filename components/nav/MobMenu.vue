@@ -10,13 +10,13 @@
           <NuxtLink to="/" class="mobmenu-link">Главная</NuxtLink>
         </li>
         <li class="mobmenu-item">
-          <NuxtLink to="/" class="mobmenu-link">Работы</NuxtLink>
+          <NuxtLink to="./" class="mobmenu-link">Работы</NuxtLink>
         </li>
         <li class="mobmenu-item">
-          <NuxtLink to="/" class="mobmenu-link">Пожелания</NuxtLink>
+          <NuxtLink to="#" class="mobmenu-link">Пожелания</NuxtLink>
         </li>
         <li class="mobmenu-item">
-          <NuxtLink to="/" class="mobmenu-link">Написать письмо</NuxtLink>
+          <NuxtLink to="#" class="mobmenu-link">Написать письмо</NuxtLink>
         </li>
       </ul>
     </aside>

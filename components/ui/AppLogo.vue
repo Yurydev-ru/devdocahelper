@@ -7,7 +7,9 @@
   <ClientOnly>
   <div class="logo_wrapper">
       <NuxtLink to="/" class="logo">
-        <Icon class="logo-light icon" :name="colorMode.value === 'light' ? 'icons:light-theme' : 'icons:dark-theme'" />        
+        <p>Helper</p>
+        <p>For</p>
+        <p>Developers</p>
     </NuxtLink>
   </div>
 </ClientOnly>
@@ -48,9 +50,16 @@
 // }
 
 .logo {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin: 0;
+}
+
+.logo p {
+  font-weight: 700;
 }
 
 </style>

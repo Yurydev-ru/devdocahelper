@@ -1,30 +1,40 @@
-img, svg, video {
- max-width: 100%;
- height: auto;
- display: block;
- }
+img,
+svg,
+video {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
 
- *, *::before, *::after {
- box-sizing: border-box;
- }
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
 
- h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  color: inherit;
- }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+   padding: 0;
+   color: inherit;
+}
 
- a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+a {
+   text-decoration: none;
+   color: inherit;
+   cursor: pointer;
 
    &:focus {
-    outline: 1px solid #333555;
-    outline-offset: 2px;
- }
- }
+      outline: 1px solid #333555;
+      outline-offset: 2px;
+   }
+}
 
- p {
-  margin: 0 0 1em 0;
- }
+p {
+   margin: 0;
+   ;
+}

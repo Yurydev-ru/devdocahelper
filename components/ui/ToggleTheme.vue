@@ -8,28 +8,31 @@
 </script>
 
 <template>
-  <button @click="setTheme('light')" :aria-current="colorMode.value === 'light'" class="btn-toggle light-btn">
-    <Icon name="hugeicons:ai-innovation-03" class="icon"/>
+  <button @click="setTheme('light')" :aria-current="colorMode.value === 'light'" class="btn-toggle">
+    <!-- <Icon class="icon light-icon" name="icons:light-theme" /> -->
+    <Icon class="logo-light icon" :name="colorMode.value === 'light' ? 'icons:light-theme' : 'icons:dark-theme'" />
   </button>
-  <button @click="setTheme('dark')" :aria-current="colorMode.value === 'dark'" class="btn-toggle dark-btn">
-    <Icon name="hugeicons:moon-02" class="icon"/>
+  <button @click="setTheme('dark')" :aria-current="colorMode.value === 'dark'" class="btn-toggle">
+    
+    <Icon class="icon dark-icon" name="icons:dark-theme" />
   </button>
 </template>
 
 <style lang="scss" scoped>
-[data-theme="light"] .light-btn {
+[data-theme="light"] .light-icon {
+  color: var(--light-icon);
   display: none;
+ 
 }
 
-[data-theme="dark"] .dark-btn {
+[data-theme="dark"] .dark-icon {
+  color: var(--dark-icon);
   display: none;
 }
 
 
 .icon {
-  color: yellow;
   size: 1.5em;
-  fill: red;
 }
   .btn-toggle {
     border: none;
@@ -37,8 +40,5 @@
     padding: 0 5px;
     cursor: pointer;
 
-    :hover {
-      outline: 1px solid black;
-    }
   }
 </style>
